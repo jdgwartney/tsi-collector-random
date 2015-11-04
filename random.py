@@ -15,7 +15,6 @@ from bmcpyagent.error.exception import ConfigurationError
 class Random(BaseCollector):
 
     def __init__(self, collector_name):
-        BaseCollector.__init__(self)
         logger = Logger()
         global log
         log = logger.get_logger(collector_name)
