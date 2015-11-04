@@ -69,7 +69,7 @@ class Random(BaseCollector):
         log.info("timestamp: {0}, value: {1}".format(timestamp, value))
 
         payload = {now: value}
-        self.check_and_publish_metric("degreesc", payload)
+        self.check_and_publish_metric("random", payload)
 
     def check_and_publish_metric(self, metric_id, payload):
         metrics = config.get_config_section(self.collector_name, Configuration.SECTION_METRICS)
