@@ -1,6 +1,6 @@
 meta:
   id: "random"
-  name: "Random Data Collector"
+  name: "Random"
   description: "This collector generates a random number between 1 and 100"
   version: "1.0.0"
   author: "BMC Software Inc."
@@ -12,7 +12,7 @@ instances:
 
 #(For advanced users only)The metrics to be monitored
 metrics:
-  - name: "Random Number"
+  - name: "Random"
     id: "random"
     data_type: "NUMBER"
     kpi: True
